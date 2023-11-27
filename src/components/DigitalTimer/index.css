@@ -68,6 +68,7 @@
   .button {
     background-color: transparent;
     border-style: none;
+    display: flex;
   }
   .image-icon-style {
     height: 35px;
@@ -117,7 +118,6 @@
     box-shadow: 0px 4px 16px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
   }
 
@@ -130,8 +130,8 @@
   }
 
   .image-bg-container {
-    height: 30vh;
-    width: 350px;
+    height: 40vh;
+    width: 355px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,9 +142,9 @@
 
   .dial-container {
     background-color: #ffffff;
-    height: 22vh;
-    width: 22vh;
-    border-radius: 22vh;
+    height: 18vh;
+    width: 18vh;
+    border-radius: 18vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,6 +158,7 @@
   .timer-settings-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .start-reset-button-container {
@@ -193,10 +194,11 @@
   }
   .set-timer-container {
     background-image: linear-gradient(to right, lightgreen, #00d9f5);
-    height: 25px;
+    height: 35px;
     width: 60px;
-
+    text-align: center;
     background-size: cover;
+    padding-bottom: 5px;
   }
 
   .set-timer-setting {

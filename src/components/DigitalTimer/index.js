@@ -20,12 +20,12 @@ class DigitalTimer extends Component {
         clearInterval(this.timerID)
       }
 
-      if (digitalTimerSeconds === 0) {
-        this.setState(prev => ({digitalTimerMin: prev.digitalTimerMin - 1}))
-        this.setState({digitalTimerSeconds: 59})
-      }
-
       this.timerID = setInterval(() => {
+        if (digitalTimerSeconds === 0) {
+          this.setState(prev => ({digitalTimerMin: prev.digitalTimerMin - 1}))
+          this.setState({digitalTimerSeconds: 59})
+        }
+
         this.setState(prev => {
           const newSeconds = prev.digitalTimerSeconds
 
